@@ -1,0 +1,187 @@
+/* css de base pour toute les autre page  */
+
+*{
+    font-size: 1.1em;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    background-image:url(/Asset/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Montserrat;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    
+    top: 10px;
+    z-index: 1;
+    
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+header a:hover{
+    opacity: 0.5;
+}
+
+
+/* css de base pour toute les autre page  */
+
+/* container */
+
+.présentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.nom{
+    position: relative;
+    font-size: 3em;
+    margin-right:-400px;
+    margin-bottom:-20px;
+    z-index: 1;
+    animation: welcome 2s forwards;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 100px;
+}
+
+.prenom{
+    position: relative;
+    font-size: 3em;
+    margin-left:-300px ;
+    margin-top:-30px ;
+    z-index: 2;
+    animation: welcome2 2s forwards;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 100px;
+}
+
+.présentation img{
+    height: 400px;
+    animation: rotation 2s forwards;
+    border-radius: 43% 57% 47% 53% / 34% 70% 30% 66% ;
+}
+
+.Menuphone{
+    display: none; 
+    margin-top: 40%;
+    margin-bottom: 40%;
+}
+/* container */
+
+/* Footer de toutes les pages*/
+footer a{
+    margin-left: 45%;
+    padding-bottom: 20PX;
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover{
+    opacity: 0.5;
+}
+
+
+@keyframes welcome{
+    from{margin-left: 450px;
+    }
+}
+
+@keyframes welcome2{
+    from{margin-left: -800px;}
+}
+
+@keyframes rotation{
+    from{rotate: 0deg;}
+    to{transform: rotate(-10deg);}
+}
+
+@media(max-width:1000px) {
+
+    /* changement css de base */
+
+    body{
+        background: linear-gradient(#434343, #000000 );
+        color: white;
+        background-repeat: no-repeat;
+    }
+
+    header a {
+        color: white;
+    }
+
+    footer a{
+        color: white;
+    }
+
+    .présentation img{
+        display: none ;
+    }
+    /* changement css de base */
+
+
+    /* changement de la page */
+
+    header{
+        display: none;
+    }
+
+    .nom { 
+        animation-play-state: paused;
+        margin-left: -300px;
+        position: relative;
+    }
+
+    .prenom {
+        animation-play-state: paused;
+        margin-left:-300px;
+        
+    }
+
+    .présentation{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Menuphone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .Menuphone a {
+        text-decoration: none;
+        color: white;
+        border: solid;
+        margin-left: 200px ;
+        margin-right:200px ;
+        margin-top:5% ;
+        margin-bottom:10px ;
+        padding-left: 5px ;
+        padding-right: 5px ;
+        padding-top:5px ;
+        padding-bottom:5px ;
+        border-radius: 30px;
+    }
+}
