@@ -4,6 +4,7 @@
     font-size: 1.1em;
     margin: 0px;
     padding: 0px;
+    background-color: #f8f8f8;
 }
 
 body{
@@ -35,6 +36,10 @@ header a:hover{
 }
 /* css de base pour toute les autre page  */
 
+.grid{
+    display: grid;
+    
+}
 
 /* Footer de toutes les pages*/
 footer a{
