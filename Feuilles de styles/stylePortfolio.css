@@ -35,10 +35,71 @@ header a:hover{
     opacity: 0.5;
 }
 /* css de base pour toute les autre page  */
+.leportfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.leportfo p{
+    margin-top: 20px;
+}
 
 .grid{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1400px ;
+    height: 800px;
+    margin-left: 70px;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.grid div{
+    transition: transform 0.5s;
+}
+
+.grid div:hover{
+    transform: scale(1.1);
+}
+
+.div1{
+    background-image: url(/Projetest/Asset/2023-06-19\ \(1\).png);
+    background-size: cover;
+}
+
+.div1 a{
+    text-decoration: none;
+    /*color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 30px;*/
+    color: #f8f8f8;
+    background-color: black;
+    margin-left: 20px;
+    margin-bottom: px;
+}
+
+.div1 img{
+    width: 40px;
+}
+
+.div2{
+    background-image: url(/Projetest/Asset/2023-06-19\ \(2\).png);
+    background-size: cover;
+}
+
+.div2 a{
+    text-decoration: none;
+    color: #f8f8f8;
+    margin-left: 20px;
     
+}
+
+.div2 img{
+    width: 40px;
 }
 
 /* Footer de toutes les pages*/
@@ -55,3 +116,8 @@ footer a:hover{
     opacity: 0.5;
 }
 /* Footer de toutes les pages*/
+
+@keyframes img {
+    from{scale:1;}
+    to{ scale: 1.1;}
+}
