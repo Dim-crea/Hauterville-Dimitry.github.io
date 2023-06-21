@@ -4,11 +4,10 @@
     font-size: 1.1em;
     margin: 0px;
     padding: 0px;
-    background-color: #f8f8f8;
 }
 
 body{
-    background-image:url(/Asset/Background.png);
+    background-image:url(/Projetest/Asset/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Montserrat;
@@ -49,11 +48,12 @@ header a:hover{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr§;
     width: 1400px ;
-    height: 800px;
+    height: 400px;
     margin-left: 70px;
     margin-top: 50px;
+    margin-bottom: 30px;
     gap: 20px;
 }
 
